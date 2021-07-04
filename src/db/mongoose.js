@@ -6,7 +6,7 @@ const mysql = require('mysql')
 	password:'18FFaridah',
 	database:'election'
 });*/
-const connection = mysql.createConnection({
+const connection = mysql.createPool({
 	host:'us-cdbr-east-04.cleardb.com',
 	user:'b4446653e2ff72',
 	password:'13539c7e',
