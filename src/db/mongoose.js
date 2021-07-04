@@ -8,9 +8,9 @@ const mysql = require('mysql')
 });*/
 const connection = mysql.createConnection({
 	host:'us-cdbr-east-04.cleardb.com',
-	user:'b919182a4968ff',
-	password:'decebae2',
-	database:'heroku_831396407'
+	user:'b4446653e2ff72',
+	password:'13539c7e',
+	database:'heroku_1698e3009e97cb1'
 });
 connection.connect(function(error){
 	if(!!error) {
