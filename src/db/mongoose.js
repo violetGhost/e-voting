@@ -12,13 +12,13 @@ const connection = mysql.createPool({
 	password:'13539c7e',
 	database:'heroku_1698e3009e97cb1'
 });
-connection.connect(function(error){
+/*connection.connect(function(error){
 	if(!!error) {
 		console.log(error);
 	} else {
 		console.log('Connected..!');
 	}
-});
+});*/
 
 module.exports = connection;
 
