@@ -6,13 +6,13 @@ const mysql = require('mysql')
 	password:'18FFaridah',
 	database:'election'
 });*/
-const pool = mysql.createPool({
+const connection = mysql.createConnection({
 	host:'us-cdbr-east-04.cleardb.com',
 	user:'b4446653e2ff72',
 	password:'13539c7e',
 	database:'heroku_1698e3009e97cb1'
 });
-pool.connect(function(error){
+connection.connect(function(error){
 	if(!!error) {
 		console.log(error);
 	} else {
