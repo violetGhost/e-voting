@@ -8,6 +8,7 @@ const md5 = require('md5');
 const dbConn = require('./db/mongoose');
 
 const app = express();
+app.use(express.static('build'));
 app.use(cors());
 app.use(bodyParser.json({ limit: '10mb' }));
 app.use(bodyParser.urlencoded({ extended: true, limit: '10mb' }));
