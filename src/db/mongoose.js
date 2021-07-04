@@ -1,5 +1,11 @@
 const mysql = require('mysql')
 
+/*const connection = mysql.createConnection({
+	host:'localhost',
+	user:'root',
+	password:'18FFaridah',
+	database:'election'
+});*/
 const connection = mysql.createConnection({
 	host:'us-cdbr-east-04.cleardb.com',
 	user:'b919182a4968ff',
@@ -15,3 +21,4 @@ connection.connect(function(error){
 });
 
 module.exports = connection;
+
